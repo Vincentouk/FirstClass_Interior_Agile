@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Title>First Class Interiors</Title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel = "icon" href = 
+    "FCI_LOGO.png" 
+            type = "image/x-icon">
+</head>
+
+<style>
+
+    .logo{
+        max-width: 5%;
+        float:right
+    }
+
+    .column {
+        padding: 50px;
+        text-align: center;
+        
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .image{
+        border: solid crimson;
+    }
+
+    .fa-facebook {
+        background: #276cff;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: rgb(197, 19, 197);
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .footer{
+        background-color: rgb(30, 221, 255);
+        padding: 1px;
+        text-align: center;
+    }
+
+    .sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    border: 2px solid crimson;
+    text-align: center;
+    }
+
+    @media screen and (max-width:1200px) {
+    .column {
+    width: 100%;
+      }
+    }
+
+</style>
+
+<header>
+    
+<div class="jumbotron text-center text-white" style="background-color: crimson;">
+    <h1 style="font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">First Class Interiors<img src="FCI_LOGO.png"
+        alt="logo" class="logo"></h1>
+    
+</div>
+
+</header>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: crimson;">
+
+<ul class="navbar-nav">
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3.html">Home</a>
+    </li>
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3_Contact.html">Contact Us</a>
+    </li>
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3_About.html">About Us</a>
+    </li>
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3_Shop.html">Shop</a>
+    </li>
+</ul>
+
+</nav>
+
+<div class="column">
+
+<div class="jumbotron text-white" id="contact" onmouseover="side();" style="background-color: crimson;">
+    <h1 id="title" onclick="change();">CONTACT US</h1>
+    <h2>Address: 72 First Avenue</h2>
+    <h2>Email: firstclassinteriors@gmail.com</h2>
+    <h2>Phone Number: 020 8754 1245</h2>
+    <h2>Fax Number: 7708</h2>
+</div>
+
+</div>
+
+<div class="sticky text-white" style="background-color: crimson;">
+    <form>
+        <h1>Send An Email</h1>
+        <p1>Name:</p1>
+        <input type="text" >
+        <p1>Email:</p1>
+        <input type="text" >
+        <p1>Subject:</p1>
+        <input type="text" >
+        <br>
+        <div class="textarea">
+        <p1>Message:</p1>
+        <br>
+        <textarea></textarea>
+        </div>
+        <input type="submit" value="Submit" id="btnsubmit" onclick="">
+    </form>
+</div>
+
+
+</body>
+
+<footer class="p-4 my-3 text-center" style="font-size: 30px; background-color: crimson;">
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+</footer>
+
+<script>
+    function change() {
+      document.getElementById('title').style = "font-size: 100px; color: green";
+    }
+    function side() {
+        document.getElementById('contact').style = "text-align: right; background-color: crimson;";
+    }
+</script> 
+
+</html>

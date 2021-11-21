@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <Title>First Class Interiors</Title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel = "icon" href = 
+    "FCI_LOGO.png" 
+            type = "image/x-icon">
+</head>
+
+
+<style>
+
+    .logo{
+        max-width: 5%;
+        float:right
+    }
+
+    .column {
+        padding: 50px;
+        text-align: center;
+        
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .staff{
+        font-weight: bold;
+        text-align: left;
+        display: inline;
+    }
+
+    .image{
+        border: solid crimson;
+        height: 200px;
+        width: 200px;
+    }
+
+    .fa-facebook {
+        background: #276cff;
+        color: white;
+    }
+
+    .fa-instagram {
+        background: rgb(197, 19, 197);
+        color: white;
+    }
+
+    .fa-linkedin {
+        background: #007bb5;
+        color: white;
+    }
+
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+
+    .footer{
+        background-color: rgb(30, 221, 255);
+        padding: 1px;
+        text-align: center;
+    }
+
+    @media screen and (max-width:1200px) {
+    .column {
+    width: 100%;
+      }
+    }
+
+</style>
+
+<header>
+    
+    <div class="jumbotron text-center text-white" style="background-color: crimson;">
+        <h1 style="font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">First Class Interiors<img src="FCI_LOGO.png"
+            alt="logo" class="logo"></h1>
+        
+    </div>
+    
+</header>
+
+<body>
+
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: crimson;">
+
+<ul class="navbar-nav">
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3.html">Home</a>
+    </li>
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3_Contact.html">Contact Us</a>
+    </li>
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3_About.html">About Us</a>
+    </li>
+    <li class="navbar-brand">
+        <a class="nav-link" href="Project 3_Shop.html">Shop</a>
+    </li>
+</ul>
+
+</nav>
+
+<div class="column">
+
+    <h2 class="jumbotron text-center text-white" style="background-color: crimson;">About Us</h2>
+
+    <div class="jumbotron text-center text-white" style="background-color: crimson;">
+        <input type="submit" value="Hide CEO" id="ceobtn" onclick="hideceo();" style="display: none;">
+        <h2>
+        <div class="staff" id="sceo"><img id ="ceoimage" src="https://hivlawcommission.org/wp-content/uploads/2016/04/Business-man-1.png" 
+            class="image" style="float: left;" onmouseover="ceobutton();"
+            ><p id="ceodesc">This is the Jonathan Jimblim, he is the CEO of the company. Creating First Class Interiors, his vision truly blesses those he works on. Everyone wants a shot 
+        at somewhere nice to stay, and he provides. Truly an icon. He's a millionaire with several hobbies, an aging man who seeks meanings in life. First Class Interiors 
+        would be nothing without him.</p>
+        </div>
+    </h2>
+    <input type="submit" value="Change CEO description to MD description" id="mddescbtn" onclick="mddesc();">
+    <input type="submit" value="Change CEO Image to MD Image" id="mdimagebtn" onclick="mdimage();">
+    </div>
+
+    <div class="jumbotron text-center text-white" id="s1" style="background-color: crimson;">
+        <input type="submit" value="Hide Staff Member" id="s1btn" onclick="hidestaff1();" style="display: none;">
+        <h2>
+        <div class="staff" ><img src="https://www.seekpng.com/png/detail/8-85135_business-woman-png.png" 
+            class="image" style="float: left;" onmouseover="s1button();">
+            <p>This is the Jolyne Jimblim, she is the daughter of the CEO of the company. Yes, she is the daughter of the Jonathan Jimblim. Being his daughter,
+                Jonathan felt he had to give her an opportunity and here she is as Co-CEO. She manages a lot and has a lot to offer. First Class Interiors runs on her 
+                functions, as she truly provides.
+            </p>
+        </div>
+    </h2>
+    </div>
+
+    <div class="jumbotron text-center text-white" id="s2" style="background-color: crimson;">
+        <input type="submit" value="Hide Staff Member" id="s2btn" onclick="hidestaff2();" style="display: none;">
+        <h2>
+        <div class="staff"><img src="https://image.freepik.com/free-photo/smiling-confident-businesswoman-posing-with-arms-folded_1262-20950.jpg" 
+            class="image" style="float: left;" onmouseover="s2button();"
+            ><p>This is Martin Madrazo, she is a pioneer in interior design. She handles Architechture, Design, and Structure. She foresees all Projects and is sure to 
+                catch any mistakes before they happen. She also contributes a lot of ideas and is quite handy when it comes to it. Martin has the ability to truly sense 
+                what the consumer wants and acts on it.
+            </p>
+        </div>
+    </h2>
+    </div>
+
+    <div class="jumbotron text-center text-white" id="s3" style="background-color: crimson;">
+        <input type="submit" value="Hide Staff Member" id="s3btn" onclick="hidestaff3();" style="display: none;">
+        <h2>
+        <div class="staff"><img src="https://previews.123rf.com/images/opolja/opolja1507/opolja150700045/43180510-handsome-businessman-working-with-laptop-in-office.jpg" 
+            class="image" style="float: left;" onmouseover="s3button();"
+            ><p>This is Adam Wynot, he foresees finances. Distributing pay and increasing sales. He never stops the grind. Adam tries his best and truly 
+                motivates the team, showing anything is possible. He has incredible calculating skills and is able to make correct choices when it comes to finance.
+                He truly has save and earned the company a lot of money.
+            </p>
+        </div>
+    </h2>
+    </div>
+
+    <div class="jumbotron text-center text-white" id="s4" style="background-color: crimson;">
+        <input type="submit" value="Hide Staff Member" id="s4btn" onclick="hidestaff4();" style="display: none;">
+        <h2>
+        <div class="staff"><img src="https://www.myjobquote.co.uk/assets/img/builders-1.jpg" 
+            class="image" style="float: left;" onmouseover="s4button();"
+            ><p>This is Bob Richards, the lead builder. He oversees all construction during projects and is the lead on how it should be done. If you have any questions 
+                on building he is your guy to ask. Handy with tools, and incredible on the job. He makes it seem so easy but trust me it's not. He has experience like 
+                no one else and it truly shows when needed.
+            </p>
+        </div>
+    </h2>
+    </div>
+
+    <div class="jumbotron text-center text-white"id="s5" style="background-color: crimson;">
+        <input type="submit" value="Hide Staff Member" id="s5btn" onclick="hidestaff5();" style="display: none;">
+        <h2>
+        <div class="staff"><img src="https://imagevars.gulfnews.com/2019/07/07/OPN-190707-CUFF-1562494147630_16bcbe89c2f_medium.jpg" 
+            class="image" style="float: left;" onmouseover="s5button();"
+            ><p>This is Angela Alla, she foresees all painting during the projects and helps process decisions that will help the design of the interior 
+                truly come to life. No one can truly comprehend colour like her, she takes ideas from the initial design and expands them to the consumers liking helping boost sales 
+                and create a happy product.
+            </p>
+        </div>
+    </h2>
+    </div>
+
+</div>
+
+</body>
+
+<footer class="p-4 my-3 text-center" style="font-size: 30px; background-color: crimson;">
+    <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+    <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+    <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+    <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+</footer>
+
+<script>
+    function mddesc(){
+        document.getElementById("ceodesc").innerHTML = "Introducing the MD Joeseph Jimblim, brother of Jonathan Jimblim. He manages and directs a lot of things for First Class " +
+        "and does it well. Managing all it's workers and taking action to direct the goals they strive for. Joesph truly tries his best, and it wouldn't be the same without him."
+        + " Joseph truly is remarkable, when in doubt hit him up."
+    }
+    function mdimage(){
+        document.getElementById("ceoimage").src ="https://www.gf100.greenfleet.net/sites/default/files/styles/medium_retina/public/Graeme-Grieve.jpg?itok=wVkcukjS";
+    }
+    function hidestaff1(){
+        document.getElementById("s1").style.display="none";
+    }
+    function s1button(){
+        document.getElementById("s1btn").style.display="block";
+    }
+    function hidestaff2(){
+        document.getElementById("s2").style.display="none";
+    }
+    function s2button(){
+        document.getElementById("s2btn").style.display="block";
+    }
+    function hidestaff3(){
+        document.getElementById("s3").style.display="none";
+    }
+    function s3button(){
+        document.getElementById("s3btn").style.display="block";
+    }
+    function hidestaff4(){
+        document.getElementById("s4").style.display="none";
+    }
+    function s4button(){
+        document.getElementById("s4btn").style.display="block";
+    }
+    function hidestaff5(){
+        document.getElementById("s5").style.display="none";
+    }
+    function s5button(){
+        document.getElementById("s5btn").style.display="block";
+    }
+    function hideceo(){
+        document.getElementById("ceoimage").src ="https://www.gf100.greenfleet.net/sites/default/files/styles/medium_retina/public/Graeme-Grieve.jpg?itok=wVkcukjS";
+        document.getElementById("ceodesc").innerHTML = "Introducing the MD Joeseph Jimblim, brother of Jonathan Jimblim. He manages and directs a lot of things for First Class " +
+        "and does it well. Managing all it's workers and taking action to direct the goals they strive for. Joesph truly tries his best, and it wouldn't be the same without him."
+        + " Joseph truly is remarkable, when in doubt hit him up."
+        document.getElementById("ceobtn").style.display="none";
+        document.getElementById("mddescbtn").style.display="none";
+        document.getElementById("mdimagebtn").style.display="none";
+    }
+    function ceobutton(){
+        document.getElementById("ceobtn").style.display="block";
+        
+    }
+</script>
+
+</html>
